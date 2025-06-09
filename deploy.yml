@@ -2,12 +2,12 @@
   tasks:
     - name: Ensure the deployment directory exists
       ansible.builtin.file:
-        path: /opt/mymavenapp
+        path: /opt/mymavenapp1
         state: directory
         mode: '0755'
 
     - name: Copy the artifact to the deployment directory
       ansible.builtin.copy:
         src: /var/lib/jenkins/workspace/mvn5/target/HelloMaven-1.0-SNAPSHOT.jar
-        dest: /opt/mymavenapp/
+        dest: /opt/mymavenapp1/abc.jar
         mode: '0755'
