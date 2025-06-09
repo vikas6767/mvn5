@@ -5,7 +5,7 @@
         path: /opt/mymavenapp
         state: directory
         mode: '0755'
-	
+
     - name: Copy the artifact to the deployment directory
       ansible.builtin.copy:
         src: /var/lib/jenkins/workspace/mvn5/target/HelloMaven-1.0-SNAPSHOT.jar
