@@ -1,6 +1,5 @@
 - name: Deploy artifact
   hosts: localhost
-  become: true  # If you need sudo/root access
   tasks:
 	- name: Ensure the deployment directory exists
   	file:
