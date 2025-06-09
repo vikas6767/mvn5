@@ -4,11 +4,11 @@
   tasks:
 	- name: Ensure the deployment directory exists
   	file:
-    	path: /opt/deploy3
+    	path: /opt/deploy1
     	state: directory
-    	mode: '0755'
+    	mode: '0777'
 
 	- name: Copy the artifact to the deployment directory
   	copy:
     	src: /var/lib/jenkins/workspace/mvn5/target/HelloMaven-1.0-SNAPSHOT.jar  # Replace with actual file
-    	dest: /opt/deploy3/likitha.jar
+    	dest: /opt/deploy1/likitha.jar
